@@ -1,0 +1,57 @@
+.centerhead{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    border-bottom: 1.5px solid gray;
+    .menu{
+        max-width: 1300px;
+        height: 96px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .logonav{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .desktop{
+            
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                li{
+                    padding: 17px;
+                    color: white;
+                }
+            }    
+        }
+
+        .buttons{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .criarconta{
+                width: 115px;
+                height: 40px;
+                background-color: transparent;
+                border-radius: 3px;
+                color: white;
+                border: 1px solid white;
+                margin-right: 16px;
+            }
+            .logar{
+                width: 115px;
+                height: 40px;
+                background: #00AEFF;
+                color: white;
+                border-radius: 3px;
+                border: none;
+            }
+        }
+    }
+} 
