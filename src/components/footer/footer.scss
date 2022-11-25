@@ -35,7 +35,6 @@ footer{
                 }
             }
             button{
-                width: 266px;
                 height: 52px;
                 background: #00AEFF;
                 border-radius: 4px;
@@ -43,6 +42,9 @@ footer{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 0 35px;
+                cursor: pointer;
+                border: none;
                 img{
                     padding-right: 10px;
                 }

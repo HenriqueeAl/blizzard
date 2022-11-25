@@ -1,6 +1,7 @@
 .game{
     padding: 12px;
     .bggame{
+        cursor: pointer;
         width: 300px;
         height: 410px;
         display: flex;
@@ -80,11 +81,14 @@
                     max-width: 100px;
                 }
                 .logos{
+                    
                     img{
-                        padding-left: 22px;
+                        margin-left: 22px;
+                        cursor: pointer;
                     }
                 }
                 .allgames{
+                    cursor: pointer;
                     color: #00AEFF;
                     img{
                         padding-right: 10px;

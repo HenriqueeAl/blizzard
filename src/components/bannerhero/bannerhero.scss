@@ -1,13 +1,13 @@
 .bannerhero{
     width: 100%;
     height: 800px;
-    background-image: url(bg-banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-
+    background-repeat: no-repeat;
+    background-size: cover;
     .center{
         width: 100%;
         height: 100%;
@@ -24,11 +24,13 @@
                 flex-direction: column;
                 justify-content: center;
                 list-style: none;
+                margin-top: 100px;
                 .select{
                     filter: grayscale(0%);
                 }
                 li{
-                    margin-bottom: 10px;
+                    cursor: pointer;
+                    margin-bottom: 20px;
                     filter: grayscale(100%);
                     img{
                         width: 50px;
@@ -51,7 +53,8 @@
                 margin-bottom: 16px;
             }
             button{
-                width: 168px;
+                width: max-content;
+                padding: 0 32px;
                 height: 52px;
                 margin-top: 32px;
                 border-radius: 4px;
@@ -59,6 +62,12 @@
                 background: #00AEFF;
                 color: white;   
                 font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    padding-right: 15px;
+                }
             }
         }
         .trailer{
@@ -70,11 +79,13 @@
             align-items: flex-end;
             color: white;
             text-align: end;
+            p{
+                margin-bottom: 16px;
+            }
 
             .boxtrailler{
                 width: 280px;
                 height: 158px;
-                background-image: url(diablotrailer.png);
                 display: flex;
                 justify-content: center;
                 align-items: center;

@@ -11,6 +11,14 @@
         justify-content: space-around;
         align-items: center;
         
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 43px;
+            height: 100px;
+            border-bottom: 2px solid #00AEFF;
+        }
+
         .logonav{
             width: 50%;
             height: 100%;
@@ -23,8 +31,16 @@
                 flex-direction: row;
                 list-style: none;
                 li{
-                    padding: 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 17px;
                     color: white;
+                    height: 100px;
+                    cursor: pointer;
+                }
+                li:hover{
+                    border-bottom: 2px solid #00AEFF;
                 }
             }    
         }
@@ -43,6 +59,12 @@
                 color: white;
                 border: 1px solid white;
                 margin-right: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .criarconta:hover{
+                background-color: white;
+                color: black;
             }
             .logar{
                 width: 115px;
@@ -51,6 +73,7 @@
                 color: white;
                 border-radius: 3px;
                 border: none;
+                cursor: pointer;
             }
         }
     }

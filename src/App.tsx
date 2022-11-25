@@ -12,6 +12,7 @@ function App() {
        <Bannerhero></Bannerhero>
        <Jogosexclusivo></Jogosexclusivo>
        <Footer></Footer>
+       
     </div>
   )
 }
