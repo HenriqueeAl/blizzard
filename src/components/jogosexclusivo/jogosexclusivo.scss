@@ -1,0 +1,101 @@
+.game{
+    padding: 12px;
+    .bggame{
+        width: 300px;
+        height: 410px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-position: center;
+        background-size: 300px;
+        transition-property: background-size;
+        transition-duration: 0.5s;
+        .logo{
+            margin-bottom: 35px;
+        }
+        .effect{
+            width: 300px;
+            height: 410px;
+            position: absolute;
+        }
+        .effect:hover{
+            background: linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
+            transform: rotate(-180deg);
+            opacity: 0.4;
+            position: absolute;
+        }
+    }
+
+    .bggame:hover{
+        background-size: 365px;
+        transition-delay: 250ms;
+    }
+
+    .name{
+        font-weight: 600;
+        font-size: 19px;
+        color: #E5E5E5;
+        margin-top: 18px;
+    }
+    .description{
+        font-weight: 400;
+        font-size: 15px;
+        color: #E5E5E5;
+    }
+}
+
+.jogosexclusivos{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 100px;
+    .center{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        color: white;
+        .header{
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title{
+                display: flex;
+                height: 40%;
+                width: 20%;
+                .games{
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #8F9199;
+                }
+            }
+            .infos{
+                display: flex;
+                width: 80%;
+                justify-content: space-between;
+                align-items: flex-end;
+                height: 40%;
+                h4{
+                    font-weight: 700;
+                    font-size: 32px;
+                    max-width: 100px;
+                }
+                .logos{
+                    img{
+                        padding-left: 22px;
+                    }
+                }
+                .allgames{
+                    color: #00AEFF;
+                    img{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .listgames{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
