@@ -5,7 +5,7 @@ interface Games {
     image: string;
     logo: string;
     name: string;
-    description: string;
+    category: string;
 }
 
 const Games = (props: Games) => {
@@ -16,7 +16,7 @@ const Games = (props: Games) => {
                     <div className='effect'></div>
                 </div>
                 <p className="name">{props.name}</p>
-                <p className="description">{props.description}</p>
+                <p className="description">{props.category}</p>
             </div>
     )
 }
@@ -53,10 +53,9 @@ export const Jogosexclusivo = () => {
                     </div>
                 </div>
                 <div className='listgames'>
-                    {games.map((game)=> 
-                        <Games image={game.image} logo={game.logo} name={game.name} description={game.category}></Games>
+                    {games.map((game: Games)=> 
+                        <Games image={game.image} logo={game.logo} name={game.name} category={game.category}></Games>
                     )}
-                    <Games image='moregames.png'></Games>
                 </div>
             </div>
         </section>

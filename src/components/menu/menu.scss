@@ -3,13 +3,17 @@
     background-color: transparent;
     position: absolute;
     border-bottom: 1.5px solid gray;
+    z-index: 10;
     .menu{
-        max-width: 1300px;
+        max-width: 1280px;
         height: 96px;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media (max-width:1350px) {
+            padding: 0 6%;
+        }
         
         .logo{
             display: flex;
@@ -25,11 +29,20 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media (max-width:1350px) {
+                width: 60%;
+            }
             .desktop{
             
                 display: flex;
                 flex-direction: row;
                 list-style: none;
+                @media (max-width:1080px) {
+                    margin-left: 100px;
+                }
+                @media (max-width:1000px) {
+                    display: none;
+                }
                 li{
                     display: flex;
                     justify-content: center;
@@ -38,9 +51,15 @@
                     color: white;
                     height: 100px;
                     cursor: pointer;
+                    @media (max-width:1100px) {
+                        padding: 0 15px;
+                    }
                 }
                 li:hover{
                     border-bottom: 2px solid #00AEFF;
+                }
+                img{
+                    margin-left: 14px;
                 }
             }    
         }
@@ -51,6 +70,9 @@
             display: flex;
             align-items: center;
             justify-content: end;
+            @media (max-width:1350px) {
+                width: 40%;
+            }
             .criarconta{
                 width: 115px;
                 height: 40px;
