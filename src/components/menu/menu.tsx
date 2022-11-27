@@ -59,6 +59,12 @@ export const Menu = () => {
                        // modelon.current?.classList.toggle('none')
                         }}>Logar</button>
                 </div>
+                <nav className='mobile'>
+                    <img src='menumobile.svg'></img>
+                    <ul>
+                            
+                    </ul>
+                </nav>
             </div>
         </header>
 

@@ -24,13 +24,13 @@
         }
 
         .logonav{
-            width: 50%;
+            width: 70%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             @media (max-width:1350px) {
-                width: 60%;
+                width: 80%;
             }
             .desktop{
             
@@ -61,7 +61,7 @@
                 img{
                     margin-left: 14px;
                 }
-            }    
+            }   
         }
 
         .buttons{
@@ -72,6 +72,9 @@
             justify-content: end;
             @media (max-width:1350px) {
                 width: 40%;
+            }
+            @media (max-width:560px) {
+                display:  none;
             }
             .criarconta{
                 width: 115px;
@@ -98,5 +101,16 @@
                 cursor: pointer;
             }
         }
+        .mobile{
+            display: none;
+            @media (max-width:1000px) {
+                cursor: pointer;
+                margin-left: 90px;
+                display: flex;
+            }
+            @media (max-width:560px) {
+                margin-left: 0px;
+            }
+        } 
     }
 } 

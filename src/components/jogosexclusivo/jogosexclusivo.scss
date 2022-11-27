@@ -22,6 +22,11 @@
             width: 201px;
             height: 276px;
         }
+        @media (max-width:735px) {
+            background-size: 150px;
+            width: 150px;
+            height: 206px;
+        }
         
         .logo{
             margin-bottom: 35px;
@@ -38,6 +43,10 @@
                 width: 201px;
                 height: 276px;
             }
+            @media (max-width:735px) {
+                width: 150px;
+                height: 206px;
+            }
         }
         .effect:hover{
             background: linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
@@ -50,6 +59,15 @@
     .bggame:hover{
         background-size: 365px;
         transition-delay: 250ms;
+        @media (max-width:1440px){
+            background-size: 345px;
+        }
+        @media (max-width:950px) {
+            background-size: 280px;
+        }
+        @media (max-width:735px) {
+            background-size: 186px;
+        }
     }
 
     .name{
@@ -63,6 +81,9 @@
         @media (max-width:950px) {
             max-width: 201px;
         }
+        @media (max-width:735px) {
+            max-width: 150px;
+        }
     }
     .description{
         font-weight: 400;
@@ -73,6 +94,9 @@
         }
         @media (max-width:950px) {
             max-width: 201px;
+        }
+        @media (max-width:735px) {
+            max-width: 150px;
         }
     }
 }
@@ -144,6 +168,9 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media (max-width:365px) {
+                justify-content: center;
+            }
         }
     }
 }
