@@ -29,6 +29,7 @@
         }
         
         .logo{
+            width: 60%;
             margin-bottom: 35px;
         }
         .effect{
@@ -77,12 +78,17 @@
         margin-top: 18px;
         @media (max-width:1440px){
             max-width: 280px;
+            font-size: 18px;
         }
         @media (max-width:950px) {
             max-width: 201px;
+            font-size: 16px;
         }
         @media (max-width:735px) {
             max-width: 150px;
+        }
+        @media (max-width:400px) {
+            display: none;
         }
     }
     .description{
@@ -91,12 +97,16 @@
         color: #E5E5E5;
         @media (max-width:1440px){
             max-width: 280px;
+            font-size: 14px;
         }
         @media (max-width:950px) {
             max-width: 201px;
         }
         @media (max-width:735px) {
             max-width: 150px;
+        }
+        @media (max-width:400px) {
+            display: none;
         }
     }
 }
@@ -140,10 +150,21 @@
                 @media (max-width:1000px) {
                     width: 100%;
                 }
+                @media (max-width:340px) {                        
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
                 h4{
                     font-weight: 700;
                     font-size: 32px;
                     max-width: 100px;
+                    @media (max-width:400px) {                        
+                        font-size: 28px;
+                    }
+                    @media (max-width:340px) {                        
+                        max-width: 100%;
+                    }
                 }
                 .logos{
                     @media (max-width:650px) {
@@ -157,8 +178,15 @@
                 .allgames{
                     cursor: pointer;
                     color: #00AEFF;
+                    margin-bottom: 10px;
                     img{
                         padding-right: 10px;
+                    }
+                    @media (max-width:400px) {                        
+                        font-size: 14px;
+                    }
+                    @media (max-width:340px) {                        
+                        display: none;
                     }
                 }
             }
@@ -170,6 +198,42 @@
             flex-wrap: wrap;
             @media (max-width:365px) {
                 justify-content: center;
+            }
+            .moregame{
+                cursor: pointer;
+                width: 300px;
+                height: 410px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1.6125px solid #212428;
+                border-radius: 4.3px;
+                flex-direction: column;
+                @media (max-width:1440px){
+                    width: 280px;
+                    height: 384px;
+                }
+                @media (max-width:950px) {
+                    width: 201px;
+                    height: 276px;
+                }
+                @media (max-width:735px) {
+                    width: 150px;
+                    height: 206px;
+                }
+                .verjogosg{
+                    display: flex;
+                    padding-top: 45px;
+                    @media (max-width: 735px) {
+                        font-size: 14px;
+                    }
+                    img{
+                        padding-right: 14px;
+                        @media (max-width: 600px) {
+                            padding-right: 8px;
+                        }
+                    }
+                }
             }
         }
     }

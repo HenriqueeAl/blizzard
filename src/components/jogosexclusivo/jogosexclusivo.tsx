@@ -56,6 +56,13 @@ export const Jogosexclusivo = () => {
                     {games.map((game: Games)=> 
                         <Games image={game.image} logo={game.logo} name={game.name} category={game.category}></Games>
                     )}
+                    <div className="moregame">
+                        <img src='logo.png' className='logo'></img>
+                        <div className='verjogosg'>
+                            <img src='verjogosg.svg'></img>
+                            <p>Ver todos jogos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
