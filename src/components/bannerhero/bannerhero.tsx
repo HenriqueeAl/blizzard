@@ -8,9 +8,11 @@ export const Bannerhero = () => {
     const [button, setButton] = useState('Jogue agora')
     const [imgr, setImgr] = useState('diablologor.png')
     const [trailer, setTrailer] = useState('diablotrailer.png')
-    const [diablo, setDiablo] = useState('select')
+    const [diablo4, setDiablo4] = useState('select')
     const [heartstone, setHeartstone] = useState('')
     const [wow, setWow] = useState('')
+    const [diablo, setDiablo] = useState('')
+    const [starcraft, setStarcraft] = useState('')
 
     const [playgif, setPlaygif] = useState('play.png')
 
@@ -21,16 +23,18 @@ export const Bannerhero = () => {
                     <div className='jogos'>
                         <ul className='listajogos'>
 
-                            <li className={diablo} onClick={()=>{
+                            <li className={diablo4} onClick={()=>{
                                 setBg('bg-diablo4.png')
                                 setTitle('Retorne à escuridão com o game Diablo IV')
                                 setDesc('O retorno de Lilith traz uma era de escuridão e sofrimento')
                                 setButton('Jogue agora')
                                 setImgr('diablologor.png')
                                 setTrailer('diablotrailer.png')
-                                setDiablo('select')
+                                setDiablo4('select')
                                 setHeartstone('')
                                 setWow('')
+                                setDiablo('')
+                                setStarcraft('')
                             }}><img src='diablo4.png'></img></li>
 
                             <li className={heartstone} onClick={()=>{
@@ -40,9 +44,11 @@ export const Bannerhero = () => {
                                 setButton('Reserve agora na pré-venda')
                                 setImgr('heartstonelogor.png')
                                 setTrailer('heartstonetrailer.png')
-                                setDiablo('')
+                                setDiablo4('')
                                 setHeartstone('select')
                                 setWow('')
+                                setDiablo('')
+                                setStarcraft('')
                             }}><img src='heartstone.png'></img></li>
 
                             <li className={wow} onClick={()=>{
@@ -52,14 +58,40 @@ export const Bannerhero = () => {
                                 setButton('Reserve agora na pré-venda')
                                 setImgr('wowlogor.png')
                                 setTrailer('wowtrailer.png')
-                                setDiablo('')
+                                setDiablo4('')
                                 setHeartstone('')
                                 setWow('select')
+                                setDiablo('')
+                                setStarcraft('')
                             }}><img src='wow.png'></img></li>
 
-                            <li><img src='diablo.png'></img></li>
+                            <li className={diablo} onClick={()=>{
+                                setBg('diabloI.png')
+                                setTitle('Retorne à escuridão com o game Diablo')
+                                setDesc('O retorno de Lilith traz uma era de escuridão e sofrimento')
+                                setButton('Jogue agora')
+                                setImgr('diabloIlogor.png')
+                                setTrailer('diabloI.png')
+                                setDiablo4('')
+                                setHeartstone('')
+                                setWow('')
+                                setDiablo('select')
+                                setStarcraft('')
+                            }}><img src='diablo.png'></img></li>
 
-                            <li><img src='starcraft.png'></img></li>
+                            <li className={starcraft} onClick={()=>{
+                                setBg('bg-starcraft.png')
+                                setTitle('O SUPREMO JOGO DE ESTRATÉGIA EM TEMPO REAL')
+                                setDesc('Viva uma experiência de guerra intergaláctica')
+                                setButton('Reserve agora na pré-venda')
+                                setImgr('starcraftlogor.png')
+                                setTrailer('starcrafttrailer.png')
+                                setDiablo4('')
+                                setHeartstone('')
+                                setWow('')
+                                setDiablo('')
+                                setStarcraft('select')
+                            }}><img src='starcraft.png'></img></li>
 
                         </ul>
                     </div>
@@ -78,23 +110,31 @@ export const Bannerhero = () => {
                         <div className='boxtrailler' 
                         onMouseOver={()=>{
                             setPlaygif('playgif.png')
-                            if(diablo == 'select'){   
+                            if(diablo4 == 'select'){   
                                 setTrailer('diablo.gif')
                             }else if(heartstone == 'select'){
                                 setTrailer('heartstone.gif')
                             }else if(wow == 'select'){
                                 setTrailer('wow.gif')
+                            }else if(diablo == 'select'){
+                                setTrailer('diabloI.gif')
+                            }else if(starcraft == 'select'){
+                                setTrailer('starcraft.gif')
                             }
                         }} 
 
                         onMouseOut={()=> {
                             setPlaygif('play.png')
-                            if(diablo == 'select'){   
+                            if(diablo4 == 'select'){   
                                 setTrailer('diablotrailer.png')
                             }else if(heartstone == 'select'){
                                 setTrailer('heartstonetrailer.png')
                             }else if(wow == 'select'){
                                 setTrailer('wowtrailer.png')
+                            }else if(diablo == 'select'){
+                                setTrailer('diabloI.png')
+                            }else if(starcraft == 'select'){
+                                setTrailer('starcrafttrailer.png')
                             }
                         }}
                         style={{backgroundImage: "url("+ trailer + ")"}}>
