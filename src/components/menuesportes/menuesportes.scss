@@ -6,6 +6,15 @@
     z-index: 1;
     backdrop-filter: blur(6px);
     background: linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%);
+    animation: slidein .8s;
+    
+    overflow: hidden;
+
+    @keyframes slidein {
+        from {
+            height: 0px;
+        }
+    }
     nav{
         max-width: 1280px;
         margin: 0 auto;
