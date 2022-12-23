@@ -1,6 +1,6 @@
 import './footer.scss'
 
-const Buttondowload = () => {
+export const Buttondowload = () => {
     if(navigator.userAgent.indexOf("Win") == 13){
         return(
             <button><img src='win.png'></img>Baixar para o Windows</button>

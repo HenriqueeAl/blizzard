@@ -3,6 +3,7 @@ import './menu.scss'
 import { Menujogos } from '../menujogos/menujogos'
 import { Menuesportes } from '../menuesportes/menuesportes'
 import { Modal } from '../modal/modal'
+import { Menumobile } from './mobile/menumobile'
 
 interface Modal {
     ref: string
@@ -14,6 +15,7 @@ export const Menu = () => {
 
     const [jogoson, setJogoson] = useState(false)
     const [esporteson, setEsporteson] = useState(false)
+    const [mobileonn, setMobileonn] = useState(false)
 
     const [modalon , setModalon] = useState(false);
 
@@ -59,16 +61,16 @@ export const Menu = () => {
                        // modelon.current?.classList.toggle('none')
                         }}>Logar</button>
                 </div>
-                <nav className='mobile'>
+                <nav className='mobile' onClick={()=>{setMobileonn(true)}}>
                     <img src='menumobile.svg'></img>
-                    <ul>
-                            
-                    </ul>
                 </nav>
+                {mobileonn == true ? <Menumobile Menumobile={setMobileonn}></Menumobile> : <></>}
             </div>
         </header>
 
         {/* Menu jogos */}
+
+        
         
         {jogoson == true ? <Menujogos></Menujogos> : <div></div>}
 
