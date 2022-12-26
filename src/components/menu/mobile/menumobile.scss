@@ -67,7 +67,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         ul{
             list-style: none;
             height: 50%;
@@ -79,33 +79,36 @@
                 cursor: pointer;
             }
         }
-        div{
+        .buttonsm{
             display: flex;
-            flex-direction: column;
             align-items: center;
-            h5{
-                font-size: 1.2em;
-                margin-bottom: 10%;
-                color: #00AEFF;
-            }
-            button{
-                width: 80%;
-                height: 52px;
-                background: #00AEFF;
-                border-radius: 4px;
+            justify-content: center;
+            width: 100%;
+            .criarconta{
+                width: 115px;
+                height: 40px;
+                background-color: transparent;
+                border-radius: 3px;
                 color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0 35px;
+                border: 1px solid white;
+                margin-right: 16px;
+                font-weight: 500;
                 cursor: pointer;
+            }
+            .criarconta:hover{
+                background-color: white;
+                color: black;
+            }
+            .logar{
+                width: 115px;
+                height: 40px;
+                background: #00AEFF;
+                color: white;
+                border-radius: 3px;
                 border: none;
-                margin-bottom: 20%;
-                img{
-                    position: static;
-                    padding-right: 10px;
-                }
+                cursor: pointer;
             }
         }
+        
     }
 }

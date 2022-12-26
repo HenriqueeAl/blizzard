@@ -58,13 +58,12 @@ export const Menu = () => {
                     <button className='criarconta'>Criar conta</button>
                     <button className='logar' onClick={()=>{
                         setModalon(true)
-                       // modelon.current?.classList.toggle('none')
                         }}>Logar</button>
                 </div>
                 <nav className='mobile' onClick={()=>{setMobileonn(true)}}>
                     <img src='menumobile.svg'></img>
                 </nav>
-                {mobileonn == true ? <Menumobile Menumobile={setMobileonn}></Menumobile> : <></>}
+                {mobileonn == true ? <Menumobile Menumobile={setMobileonn} Modalmobile={setModalon}></Menumobile> : <></>}
             </div>
         </header>
 

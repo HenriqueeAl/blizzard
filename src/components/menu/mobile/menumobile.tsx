@@ -4,6 +4,7 @@ import './menumobile.scss'
 
 interface Menumobile {
     Menumobile: Function;
+    Modalmobile: Function;
 }
 
 export const Menumobile = (props : Menumobile) => {
@@ -21,9 +22,11 @@ export const Menumobile = (props : Menumobile) => {
                         <li>Noticias</li>
                         <li>Suporte</li>
                     </ul>
-                    <div>
-                        <h5>Baixe agora o battle.net</h5>
-                        <Buttondowload></Buttondowload>
+                    <div className='buttonsm'>
+                        <button className='criarconta'>Criar conta</button>
+                        <button className='logar' onClick={()=>{
+                            props.Modalmobile(true)
+                            }}>Logar</button>
                     </div>
                 </nav>
             </div>
