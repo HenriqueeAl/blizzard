@@ -7,13 +7,16 @@
     backdrop-filter: blur(6px);
     background: linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%);
     animation: slidein .8s;
-    
     overflow: hidden;
 
     @keyframes slidein {
         from {
             height: 0px;
         }
+    }
+
+    @media (max-width:1000px) {
+        display: none;        
     }
     nav{
         max-width: 1280px;
@@ -28,6 +31,12 @@
                 width: 174px;
                 height: 237px;
                 text-align: center;
+                transition: 1s;
+                cursor: pointer;
+            }
+            li:hover{
+                scale: 1.1;
+                transition: 1s;
             }
         }
     }
@@ -45,9 +54,13 @@
             justify-content: center;
             align-items: center;
             color: #FFFFFF;
+            cursor: pointer;
             img{
                 margin-right: 10px;
             }
+        }
+        .center:hover{
+            opacity: 0.5;
         }
     }
 }

@@ -12,7 +12,7 @@ const Games = (props: Games) => {
     return (
             <div className="game">
                 <div className='bggame' style={{backgroundImage: "url(" + props.image + ")"}}>
-                    <img src={props.logo} className='logo'></img>
+                    <img src={props.logo} className='logo' alt='loading or error'></img>
                     <div className='effect'></div>
                 </div>
                 <p className="name">{props.name}</p>
@@ -44,22 +44,22 @@ export const Jogosexclusivo = () => {
                     <div className='infos'>
                         <h4>Jogos exclusivos</h4>
                         <div className='logos'>
-                            <img src='battle.svg'></img>
-                            <img src='nitendo.svg'></img>
-                            <img src='xbox.svg'></img>
-                            <img src='ps.svg'></img>
+                            <img src='battle.svg' alt='loading or error'></img>
+                            <img src='nitendo.svg' alt='loading or error'></img>
+                            <img src='xbox.svg' alt='loading or error'></img>
+                            <img src='ps.svg' alt='loading or error'></img>
                         </div>
-                        <p className='allgames'><img src='verjogos.svg'></img>Ver todos jogos</p>
+                        <p className='allgames'><img src='verjogos.svg' alt='loading or error'></img>Ver todos jogos</p>
                     </div>
                 </div>
                 <div className='listgames'>
                     {games.map((game: Games)=> 
-                        <Games image={game.image} logo={game.logo} name={game.name} category={game.category}></Games>
+                        <Games image={game.image} logo={game.logo} name={game.name} category={game.category} key={Math.random()}></Games>
                     )}
                     <div className="moregame">
-                        <img src='logo.png' className='logo'></img>
+                        <img src='logo.png' className='logo' alt='loading or error'></img>
                         <div className='verjogosg'>
-                            <img src='verjogosg.svg'></img>
+                            <img src='verjogosg.svg' alt='loading or error'></img>
                             <p>Ver todos jogos</p>
                         </div>
                     </div>

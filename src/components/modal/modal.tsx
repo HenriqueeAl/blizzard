@@ -13,9 +13,9 @@ export const Modal = (props: Modal) => {
         </div>
         <div className='modal'>
             <div className='bg'>
-            <img src='closemodal.png' className='close' onClick={()=>{props.modal(false)}}></img>
+            <img src='closemodal.png' className='close' onClick={()=>{props.modal(false)}} alt='loading or error'></img>
             <div className='contentmodel'>
-                <img src='battlenet.png' className='logo'></img>
+                <img src='battlenet.png' className='logo' alt='loading or error'></img>
                 <form>
                     <input placeholder='E-mail ou telefone'></input>
                     <input placeholder='Senha'></input>
@@ -23,9 +23,9 @@ export const Modal = (props: Modal) => {
                 </form>
                 <p className='ou'>ou conecte-se com </p>
                 <div className='loginsociais'>
-                    <div><img src='googlel.svg'></img></div>
-                    <div><img src='applel.svg'></img></div>
-                    <div><img src='facel.svg'></img></div>
+                    <div><img src='googlel.svg' alt='loading or error'></img></div>
+                    <div><img src='applel.svg' alt='loading or error'></img></div>
+                    <div><img src='facel.svg' alt='loading or error'></img></div>
                 </div>
                 <p><a href='#'>Crie uma conta</a> Battle.net de graça</p>
                 <a href='#'>Não consegue logar?</a>

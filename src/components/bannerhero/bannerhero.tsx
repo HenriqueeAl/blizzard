@@ -35,7 +35,7 @@ export const Bannerhero = () => {
                                 setWow('')
                                 setDiablo('')
                                 setStarcraft('')
-                            }}><img src='diablo4.png'></img></li>
+                            }}><img src='diablo4.png' alt='loading or error'></img></li>
 
                             <li className={heartstone} onClick={()=>{
                                 setBg('bg-heartstone.png')
@@ -49,7 +49,7 @@ export const Bannerhero = () => {
                                 setWow('')
                                 setDiablo('')
                                 setStarcraft('')
-                            }}><img src='heartstone.png'></img></li>
+                            }}><img src='heartstone.png' alt='loading or error'></img></li>
 
                             <li className={wow} onClick={()=>{
                                 setBg('bg-wow.png')
@@ -63,7 +63,7 @@ export const Bannerhero = () => {
                                 setWow('select')
                                 setDiablo('')
                                 setStarcraft('')
-                            }}><img src='wow.png'></img></li>
+                            }}><img src='wow.png' alt='loading or error'></img></li>
 
                             <li className={diablo} onClick={()=>{
                                 setBg('diabloI.png')
@@ -77,7 +77,7 @@ export const Bannerhero = () => {
                                 setWow('')
                                 setDiablo('select')
                                 setStarcraft('')
-                            }}><img src='diablo.png'></img></li>
+                            }}><img src='diablo.png' alt='loading or error'></img></li>
 
                             <li className={starcraft} onClick={()=>{
                                 setBg('bg-starcraft.png')
@@ -91,7 +91,7 @@ export const Bannerhero = () => {
                                 setWow('')
                                 setDiablo('')
                                 setStarcraft('select')
-                            }}><img src='starcraft.png'></img></li>
+                            }}><img src='starcraft.png' alt='loading or error'></img></li>
 
                         </ul>
                     </div>
@@ -99,12 +99,12 @@ export const Bannerhero = () => {
                     <div className='text'>
                         <h2>{title}</h2>
                         <p>{desc}</p>
-                        <button><img src='person.png'></img>{button}</button>
+                        <button><img src='person.png' alt='loading or error'></img>{button}</button>
                     </div>
                 </div>
 
                 <div className='trailer'>
-                    <img src={imgr}></img>
+                    <img src={imgr} alt='loading or error'></img>
                     <div>
                         <p>ASSISTA O TRAILLER</p>
                         <div className='boxtrailler' 
@@ -138,7 +138,7 @@ export const Bannerhero = () => {
                             }
                         }}
                         style={{backgroundImage: "url("+ trailer + ")"}}>
-                        <img src={playgif}></img>
+                        <img src={playgif} alt='loading or error'></img>
                         </div>
                     </div>
                 </div>

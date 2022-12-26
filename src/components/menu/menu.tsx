@@ -32,7 +32,7 @@ export const Menu = () => {
             <div className='menu'>
                 <div className='logonav'>
                     <div className='logo'>
-                        <img src='logo.png'></img>
+                        <img src='logo.png' alt='loading or error'></img>
                     </div>
                     <nav>
                         <ul className='desktop'>
@@ -41,13 +41,13 @@ export const Menu = () => {
                                 if(esporteson){
                                 setEsporteson(!esporteson)   
                                 }
-                                }}>Jogos <img src={jogoson == true ? 'setab.png' : 'setaw.png'}></img></li>
+                                }}>Jogos <img src={jogoson == true ? 'setab.png' : 'setaw.png'} alt='loading or error'></img></li>
                             <li onClick={() => {
                                 setEsporteson(!esporteson)
                                 if(jogoson){
                                     setJogoson(!jogoson)   
                                     }
-                                }}>Esportes <img src={esporteson == true ? 'setab.png' : 'setaw.png'}></img></li>
+                                }}>Esportes <img src={esporteson == true ? 'setab.png' : 'setaw.png'} alt='loading or error'></img></li>
                             <li>Loja</li>
                             <li>Noticias</li>
                             <li>Suporte</li>
@@ -61,7 +61,7 @@ export const Menu = () => {
                         }}>Logar</button>
                 </div>
                 <nav className='mobile' onClick={()=>{setMobileonn(true)}}>
-                    <img src='menumobile.svg'></img>
+                    <img src='menumobile.svg' alt='loading or error'></img>
                 </nav>
                 {mobileonn == true ? <Menumobile Menumobile={setMobileonn} Modalmobile={setModalon}></Menumobile> : <></>}
             </div>

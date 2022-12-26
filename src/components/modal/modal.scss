@@ -10,6 +10,9 @@
     background-color: black;
     z-index: 15;
     border-radius: 4px;
+    @media (max-width:735px) {
+        display: none;
+    }
     .bg{
         width: 100%;
         height: 100%;
@@ -100,4 +103,7 @@
     height: 100vh;
     backdrop-filter: blur(6px);
     z-index: 13;
+    @media (max-width:735px) {
+        display: none;
+    }
 }
