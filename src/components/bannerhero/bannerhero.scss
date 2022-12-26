@@ -143,6 +143,9 @@
                 background-position: center;
                 background-size: cover;
                 border-radius: 8px;
+                @media (max-width:1080px) {
+                    align-items: baseline;
+                }
             }
         }
 

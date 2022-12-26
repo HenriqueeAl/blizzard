@@ -1,6 +1,5 @@
 .menumobile{
     padding: 2%;
-    width: 50vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -8,14 +7,51 @@
     background-color: black;
     opacity: .95;
     box-shadow: -29px 0px 19px 100vw rgba(0,0,0,0.54);
+    width: 50vw;
+    animation: width 1s;
+    @keyframes width {
+        from{
+            width: 0;
+        }
+        to{
+            width: 50vw;
+        }
+    }
     @media (max-width:600px) {
         width: 60vw;
+        @keyframes width {
+            
+            from{
+                width: 0;
+            }
+            to{
+                width: 60vw;
+            }
+        }
     }
     @media (max-width:400px) {
         width: 80vw;
+        @keyframes width {
+            
+            from{
+                width: 0;
+            }
+            to{
+                width: 80vw;
+            }
+        }
     }
     @media (max-width:300px) {
         width: 100vw;
+        @keyframes width {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 100vw;
+            }
+        }
     }
 
     img{
